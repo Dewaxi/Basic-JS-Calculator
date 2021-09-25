@@ -1,0 +1,144 @@
+@font-face {
+    src: url(./boxicons.ttf);
+    font-family: oxygen;
+}
+
+:root {
+    /* CSS HEX */
+--bon-jour: #ecebec;
+--indigo: #6153d6;
+--biloba-flower: #aca4ee;
+--dull-lavender: #9b94df;
+--dull-lavender: #9c8ce5;
+--green-white: #edf0e4;
+--perfume: #c9c2fa;
+--hawkes-blue: #d4d4fc;
+--perano: #bcbcf5;
+}
+
+/*Global styling*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: oxygen, Arial, Helvetica, sans-serif;
+}
+body {
+    background: var(--bon-jour);
+}
+
+ul, li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+
+nav{
+    background-color: var(--hawkes-blue);
+    height: 150px;
+    box-shadow: 0 1px 5px #111;
+}
+
+#logo{
+    height: 144px;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 8rem;
+}
+
+/*
+===================
+Calculator
+===================
+*/
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    flex: 0 0 95%;
+}
+
+@media screen and (min-width: 992px) {
+    .calculator {
+      width: 50vw;
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+  }
+
+.screen {
+    width: 100%;
+    font-size: 7rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: rgb(41,41,56);
+    color: #fff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.1rem;
+}
+
+.btn,.btn-equal,.btn-clear {
+    text-transform: uppercase;
+    background: var(--indigo);
+    color: #111;
+    padding: 0.375rem 0.75rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: all 0.3s linear;
+    font-size: 4rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border: none;
+  }
+  .btn:hover {
+    color: var(--indigo);
+    background: #fff;
+    border-color: var(--indigo);
+  }
+
+  .btn-grey{
+      background-color: var(--dull-lavender);
+  }
+
+  
+
+ 
